@@ -1,0 +1,12 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Aliases.
+alias fp='flatpak --user'
+alias ls='ls -A --color=auto --group-directories-first'
+alias vi='nvim'
+
+# Prompt.
+PS1='\W \$ '

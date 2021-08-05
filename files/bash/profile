@@ -1,0 +1,29 @@
+# .bash_profile
+
+# Aliases and functions.
+[[ -f ~/.config/bash/bashrc ]] && . ~/.config/bash/bashrc
+
+# Paths.
+export PATH=$PATH:~/.local/bin:~/.repos/lieux/scr/ipts
+
+# Build flags.
+export CFLAGS="-march=native -O3 -pipe"
+export CXXFLAGS="-march=native -O3 -pipe"
+export MAKEFLAGS="-j8"
+
+# Programs.
+export EDITOR=nvim
+export VISUAL=$EDITOR
+export HISTCONTROL=erasedups:ignoreboth
+export HISTFILE=~/.local/share/bash/history
+export HISTSIZE=
+export LESSHISTFILE=-
+export NNN_OPENER=opn
+#export PF_INFO="title os host kernel uptime pkgs memory palette"
+export WGETRC=~/.config/wget/wgetrc
+
+# Locales.
+export LC_COLLATE="C"
+
+# Miscellaneous.
+export SCREEN_RES=1600x900

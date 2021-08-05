@@ -1,0 +1,36 @@
+# terminal emulator
+super + Return
+	xterm
+
+# program launcher
+super + p
+	mnu
+
+# reload sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# file manager
+super + n
+	xterm -e nnn -dHrx
+
+# screenshot
+{_,super + }Print
+	grb {c,s}
+
+# audio control
+XF86Audio{Lower,Raise}Volume
+	pactl set-sink-volume @DEFAULT_SINK@ {-,+}5%
+
+XF86Audio{_,Mic}Mute
+	{ i=sink;   j=@DEFAULT_SINK@; \
+	, i=source; j=alsa_input.pci-0000_00_1b.0.analog-stereo; } \
+	pactl set-$i-mute $j toggle
+
+# media control
+XF86Audio{Next,Pause,Play,Prev}
+	playerctl {next,pause,play,previous}
+
+# webcam
+XF86WebCam
+	cam

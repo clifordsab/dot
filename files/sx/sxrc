@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Key repeat rate.
+xset r rate 125 75
+
+# Xresources.
+xrdb -merge -I"$HOME" ~/.config/X11/Xresources
+
+# Wallpaper.
+xwallpaper --stretch ~/pictures/wall/papers/japan-busy.png
+
+# Hotkeys.
+sxhkd &
+
+# Status bar.
+luastatus -b dwm -B separator="  " ~/.config/luastatus/dwm/*.lua &
+
+# Window manager.
+while :; do ssh-agent dwm; done

@@ -1,0 +1,41 @@
+XTerm.termName:                xterm-256color
+XTerm.vt100.faceName:          monospace:charwidth=8:pixelsize=13
+XTerm.vt100.internalBorder:    50
+XTerm.vt100.selectToClipboard: true
+XTerm.vt100.titeInhibit:       true
+
+! special
+XTerm.vt100.background: #1d1f21
+XTerm.vt100.foreground: #c5c8c6
+
+! black
+XTerm.vt100.color0:     #282a2e
+XTerm.vt100.color8:     #373b41
+
+! red
+XTerm.vt100.color1:     #a54242
+XTerm.vt100.color9:     #cc6666
+
+! green
+XTerm.vt100.color2:     #8c9440
+XTerm.vt100.color10:    #b5bd68
+
+! yellow
+XTerm.vt100.color3:     #de935f
+XTerm.vt100.color11:    #f0c674
+
+! blue
+XTerm.vt100.color4:     #5f819d
+XTerm.vt100.color12:    #81a2be
+
+! magenta
+XTerm.vt100.color5:     #85678f
+XTerm.vt100.color13:    #b294bb
+
+! cyan
+XTerm.vt100.color6:     #5e8d87
+XTerm.vt100.color14:    #8abeb7
+
+! white
+XTerm.vt100.color7:     #707880
+XTerm.vt100.color15:    #c5c8c6
