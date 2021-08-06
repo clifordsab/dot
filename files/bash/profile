@@ -13,13 +13,13 @@ export MAKEFLAGS="-j8"
 
 # Programs.
 export EDITOR=nvim
-export VISUAL=$EDITOR
 export HISTCONTROL=erasedups:ignoreboth
 export HISTFILE=~/.local/share/bash/history
 export HISTSIZE=
 export LESSHISTFILE=-
 export NNN_OPENER=opn
 #export PF_INFO="title os host kernel uptime pkgs memory palette"
+export VISUAL=$EDITOR
 export WGETRC=~/.config/wget/wgetrc
 
 # Locales.

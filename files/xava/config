@@ -1,6 +1,5 @@
 ## Configuration file for XAVA. Default values are commented out. Use either ';' or '#' for commenting.
 
-
 [general]
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
@@ -32,8 +31,6 @@ bars = 63
 # Xava will automatically increase the higher cutoff if a too low band is specified.
 ; lower_cutoff_freq = 20
 ; higher_cutoff_freq = 20000
-
-
 
 [window]
 
@@ -72,7 +69,6 @@ y_padding = -148
 # This option removes the ability to interact with the window (works under Xorg only)
 ; interactable = 1
 
-
 [input]
 
 # Audio capturing method. Possible methods are: 'pulse', 'alsa', 'fifo' or 'sndio'.
@@ -97,7 +93,6 @@ source = auto
 
 ; method = portaudio
 ; source = auto
-
 
 [output]
 
@@ -135,7 +130,6 @@ source = auto
 # Adjusts the FFT buffer size (calculated by 2^fft_size)
 ; fft_size = 16
 
-
 [color]
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
@@ -154,8 +148,6 @@ foreground_opacity = 0.16
 ; gradient_count = 2
 ; gradient_color_1 = '#0099ff'
 ; gradient_color_2 = '#ff3399'
-
-
 
 [smoothing]
 
@@ -194,7 +186,6 @@ gravity = 1500
 
 # Color format is #aarrggbb
 ; color = "#ff000000"
-
 
 [eq]
 

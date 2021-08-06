@@ -2,7 +2,7 @@
 #
 # Auto-install config.
 
-# create needed directories
+# directories
 mkdir -p files/mpv/scripts/ files/wget
 
 # mpv-mpris
@@ -10,10 +10,10 @@ git clone https://github.com/hoyon/mpv-mpris
 make -C mpv-mpris
 mv -f mpv-mpris/mpris.so files/mpv/scripts/
 
-# wget
+# wgetrc
 printf '%s\n' "hsts-file = $HOME/.local/share/wget/hsts" > files/wget/wgetrc
 
-# copy config
+# copy
 find files -type f | while read -r file; do
     _file=$HOME/.config/${file#*/}
 
@@ -22,7 +22,7 @@ find files -type f | while read -r file; do
     cp -f "$file" "$_file"
 done
 
-# do post files with no directories
+# others
 # shellcheck disable=2016
 printf '%s\n' 'XDG_DESKTOP_DIR="$HOME/"' > "$HOME/.config/user-dirs.dirs"
 
